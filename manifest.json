@@ -27,5 +27,15 @@
         "48": "/images/get_started48.png",
         "128": "/images/get_started128.png"
     },
-    "options_page": "options.html"
+    "options_page": "options.html",
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "Chirp.mp3"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
 }

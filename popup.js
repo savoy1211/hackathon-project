@@ -1,11 +1,9 @@
 let displayLocation = document.getElementById("userLocation");
 
-console.log('hello');
 const FLICKR_API_KEY = 'd9c64386725633bb757d9cf4c7e2fcb9';
-//https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=your_key&per_page=10&format=json&nojsoncallback=1
-fetch(`https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=${FLICKR_API_KEY}&per_page=10&format=json&nojsoncallback=1`)
-    .then(response => response.json())
-    .then(data => console.log('fetched data', data));
+// fetch(`https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=${FLICKR_API_KEY}&per_page=10&format=json&nojsoncallback=1`)
+// .then(response => response.json())
+// .then(data => console.log('fetched data', data));
 
 
 const getLocation = new Promise((resolve) => {
@@ -22,7 +20,8 @@ const getLocation = new Promise((resolve) => {
 
 const setCurrentLocation = () => {
     chrome.storage.sync.get("currentLocation", (currentLocation) => {
-        displayLocation.innerText = `Here is your current locations: ${currentLocation.currentLocation.long}, ${currentLocation.currentLocation.lat}`;
+        // displayLocation.innerText = `Here is your current locations: ${currentLocation.currentLocation.long}, ${currentLocation.currentLocation.lat}`;
+        displayLocation.innerText = 'Here are some birds in your current location:'
     });
 }
 

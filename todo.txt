@@ -9,6 +9,7 @@ Check Bird API, see if we can get bird data
     -bird sounds
     -birds by location
     *Our api key: lu267npcirvi
+    'https://live.staticflickr.com/{server-id}/{id}_{secret}_{size-suffix}.jpg'
 
 
 Check google api for location (if we can get current user's location)

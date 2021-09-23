@@ -7,6 +7,7 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 
+
 /*change this into the js that handles the bird and its movements
 
 bird image will be added to SOMETHING? with DOM ??? so that we have access to the image here (or some other way to make it a global variable)
