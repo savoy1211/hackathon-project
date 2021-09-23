@@ -7,16 +7,3 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 
-// var x = document.getElementById("demo");
-function getLocation() {
-  console.log(navigator);
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    console.log("Geolocation is not supported by this browser.");
-  }
-}
-
-function showPosition(position) {
-  return "Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude;
-}
