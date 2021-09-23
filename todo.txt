@@ -1,0 +1,14 @@
+Check Bird API, see if we can get bird data
+    -Bird species list
+        -Recent nearby observations
+        -Recent observations in a region
+    -Bird images
+    -bird sounds
+    -birds by location
+    *Our api key: lu267npcirvi
+
+
+Check google api for location (if we can get current user's location)
+    -Get longitutde and latitude
+    *api key: AIzaSyDDZAS34kmRCEWrvA0b4YsLTvJa1q4DES0
+
