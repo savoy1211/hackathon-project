@@ -3,6 +3,9 @@ Check Bird API, see if we can get bird data
         -Recent nearby observations
         -Recent observations in a region
     -Bird images
+        -Flickr
+            *api key: d9c64386725633bb757d9cf4c7e2fcb9
+            *api secret: 9c145c5240741491
     -bird sounds
     -birds by location
     *Our api key: lu267npcirvi
@@ -12,3 +15,27 @@ Check google api for location (if we can get current user's location)
     -Get longitutde and latitude
     *api key: AIzaSyDDZAS34kmRCEWrvA0b4YsLTvJa1q4DES0
 
+// HOW TO GET CURRENT Longitude AND Latitude
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+
+
+
+
+
+
+
+CHALLENGES: 
+-geolocation payment - thought we had to pay, then we found out we didnt
